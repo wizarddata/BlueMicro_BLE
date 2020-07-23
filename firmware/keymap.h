@@ -1,5 +1,5 @@
 /*
-Copyright 2018-2020 <Pierre Constantineau>
+Copyright (C) 2020, Jocelyn Turcotte <turcotte.j@gmail.com>
 
 3-Clause BSD License
 
@@ -19,7 +19,6 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 */
 #include <stdint.h>
 #include "hid_keycodes.h"
-#include "hardware_variants.h"
 #include "keyboard_config.h"
 #include "advanced_keycodes.h"
 #include "Key.h"
@@ -28,10 +27,7 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 #ifndef KEYMAP_H
 #define KEYMAP_H
 
-#define _L0  0
-#define _L1  1
-#define _L2  2
-#define _L3  3
+
 
 void setupKeymap();
 extern std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix;
