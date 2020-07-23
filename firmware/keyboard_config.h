@@ -29,19 +29,30 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 
 /* HARDWARE DEFINITION*/
 /* key matrix size */
-#define MATRIX_ROWS 1
+#define MATRIX_ROWS 12
 #define MATRIX_COLS 1
 
-#define MATRIX_ROW_PINS {12}
+#define MATRIX_ROW_PINS {12, 13, 14, 15, 16, 17, 8, 6, 7, 4, 3, 5}
 #define MATRIX_COL_PINS {29}
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
 #define KEYMAP( \ 
-    k00 \
+    k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, k10, k11 \
 ) {                                              \
-        { k00} \
+        { k00}, \
+        { k01}, \
+        { k02}, \
+        { k03}, \
+        { k04}, \
+        { k05}, \
+        { k06}, \
+        { k07}, \
+        { k08}, \
+        { k09}, \
+        { k10}, \
+        { k11} \
 }
 
 #endif /* KEYBOARD_CONFIG_H */
