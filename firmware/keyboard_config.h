@@ -29,46 +29,19 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 
 /* HARDWARE DEFINITION*/
 /* key matrix size */
-#define MATRIX_ROWS 12 //15
-#define MATRIX_COLS 7
+#define MATRIX_ROWS 1
+#define MATRIX_COLS 1
 
-#define MATRIX_ROW_PINS {12, 13, 14, 15, 16, 17, 8, 6, 7, 4, 3, 5} //removed 23, 22, 20
-#define MATRIX_COL_PINS {24, 29, 19, 31, 2, 30, 10}
+#define MATRIX_ROW_PINS {12}
+#define MATRIX_COL_PINS {24}
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
 #define KEYMAP( \ 
-    k00, k10, k20, k30, k40, k50,                 \
-    k01, k11, k21, k31, k41, k51,                 \
-    k02, k12, k22, k32, k42, k52,                 \
-    k03, k13, k23, k33, k43, k53,                 \
-         k14, k24, k34, k54,                      \
-                             k56, k55,            \
-                                  k35,            \
-                        k36, k46, k25,            \
-                                                  \ 
-                   k60, k70, k80, k90, kA0, kB0,  \
-                   k61, k71, k81, k91, kA1, kB1,  \
-                   k62, k72, k82, k92, kA2, kB2,  \
-                   k63, k73, k83, k93, kA3, kB3,  \
-                        k64, k84, k94, kA4,       \
-              k96, k85,                           \
-              k86,                                \
-              k66, k75, k65                       \
+    k00 \
 ) {                                              \
-        { k00, k01, k02, k03, KC_NO,    KC_NO,    KC_NO      }, \
-        { k10, k11, k12, k13, k14,      KC_NO,    KC_NO      }, \
-        { k20, k21, k22, k23, k24,      k25,      KC_NO      }, \
-        { k30, k31, k32, k33, k34,      k35,      k36   }, \
-        { k40, k41, k42, k43, KC_NO,    KC_NO,    k46   }, \
-        { k50, k51, k52, k53, k54,      k55,      k56   }, \
-        { k60, k61, k62, k63, k64,      k65,      k66   }, \
-        { k70, k71, k72, k73, KC_NO,    k75,      KC_NO      }, \
-        { k80, k81, k82, k83, k84,      k85,      k86   }, \
-        { k90, k91, k92, k93, k94,      KC_NO,    k96   }, \
-        { kA0, kA1, kA2, kA3, kA4,      KC_NO,    KC_NO      }, \
-        { kB0, kB1, kB2, kB3, KC_NO,    KC_NO,    KC_NO      } \
+        { k00} \
 }
 
 #endif /* KEYBOARD_CONFIG_H */
