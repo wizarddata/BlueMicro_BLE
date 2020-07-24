@@ -29,30 +29,36 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 
 /* HARDWARE DEFINITION*/
 /* key matrix size */
-#define MATRIX_ROWS 12
-#define MATRIX_COLS 1
+#define MATRIX_ROWS 15
+#define MATRIX_COLS 4
 
-#define MATRIX_ROW_PINS {12, 13, 14, 15, 16, 17, 8, 6, 7, 4, 3, 5}
-#define MATRIX_COL_PINS {29}
+#define MATRIX_ROW_PINS {12, 13, 14, 15, 16, 17, 8, 6, 7, 4, 3, 5, 23, 22, 20}
+#define MATRIX_COL_PINS {24, 29, 19, 28} //pin 31 reads battery voltage by default, bodge to 28
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
 #define KEYMAP( \ 
-    k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, k10, k11 \
+    k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, k10, k11, k12, k13, k14, \
+    k15, k16, k17, k18, k19, k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, \
+    k30, k31, k32, k33, k34, k35, k36, k37, k38, k39, k40, k41, k42, k43, k44, \
+    k45, k46, k47, k48, k49, k50, k51, k52, k53, k54, k55, k56, k57, k58, k59 \
 ) {                                              \
-        { k00}, \
-        { k01}, \
-        { k02}, \
-        { k03}, \
-        { k04}, \
-        { k05}, \
-        { k06}, \
-        { k07}, \
-        { k08}, \
-        { k09}, \
-        { k10}, \
-        { k11} \
+        { k00, k15, k30, k45}, \
+        { k01, k16, k31, k46}, \
+        { k02, k17, k32, k47}, \
+        { k03, k18, k33, k48}, \
+        { k04, k19, k34, k49}, \
+        { k05, k20, k35, k50}, \
+        { k06, k21, k36, k51}, \
+        { k07, k22, k37, k52}, \
+        { k08, k23, k38, k53}, \
+        { k09, k24, k39, k54}, \
+        { k10, k25, k40, k55}, \
+        { k11, k26, k41, k56}, \
+        { k12, k27, k42, k57}, \
+        { k13, k28, k43, k58}, \
+        { k14, k29, k44, k59} \
 }
 
 #endif /* KEYBOARD_CONFIG_H */
@@ -64,3 +70,5 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
                 // { kC0, kC1, kC2, kC3, kC4,      kC5,      KC_NO      }, 
         // { kD0, kD1, kD2, kD3, kD4,      kD5,      KC_NO      }, 
         // { kE0, kE1, kE2, kE3, kE4,      kE5,      KC_NO      } 
+//{12, 13, 14, 15, 16, 17, 8, 6, 7, 4, 3, 5} //removed 23, 22, 20
+//#define MATRIX_COL_PINS {24, 29, 19, 31, 2, 30, 10}
