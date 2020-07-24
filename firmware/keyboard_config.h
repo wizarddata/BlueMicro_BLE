@@ -30,10 +30,10 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 /* HARDWARE DEFINITION*/
 /* key matrix size */
 #define MATRIX_ROWS 15
-#define MATRIX_COLS 4
+#define MATRIX_COLS 7
 
 #define MATRIX_ROW_PINS {12, 13, 14, 15, 16, 17, 8, 6, 7, 4, 3, 5, 23, 22, 20}
-#define MATRIX_COL_PINS {24, 29, 19, 28} //pin 31 reads battery voltage by default, bodge to 28
+#define MATRIX_COL_PINS {24, 29, 19, 28, 2, 30, 10} //pin 31 reads battery voltage by default, bodge to 28
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
@@ -42,23 +42,26 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
     k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, k10, k11, k12, k13, k14, \
     k15, k16, k17, k18, k19, k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, \
     k30, k31, k32, k33, k34, k35, k36, k37, k38, k39, k40, k41, k42, k43, k44, \
-    k45, k46, k47, k48, k49, k50, k51, k52, k53, k54, k55, k56, k57, k58, k59 \
+    k45, k46, k47, k48, k49, k50, k51, k52, k53, k54, k55, k56, k57, k58, k59, \
+    k60, k61, k62, k63, k64, k65, k66, k67, k68, k69, k70, k71, k72, k73, k74, \
+    k75, k76, k77, k78, k79, k80, k81, k82, k83, k84, k85, k86, k87, k88, k89, \
+    k90, k91, k92, k93, k94, k95, k96, k97, k98, k99, kA0, kA1, kA2, kA3, kA4  \
 ) {                                              \
-        { k00, k15, k30, k45}, \
-        { k01, k16, k31, k46}, \
-        { k02, k17, k32, k47}, \
-        { k03, k18, k33, k48}, \
-        { k04, k19, k34, k49}, \
-        { k05, k20, k35, k50}, \
-        { k06, k21, k36, k51}, \
-        { k07, k22, k37, k52}, \
-        { k08, k23, k38, k53}, \
-        { k09, k24, k39, k54}, \
-        { k10, k25, k40, k55}, \
-        { k11, k26, k41, k56}, \
-        { k12, k27, k42, k57}, \
-        { k13, k28, k43, k58}, \
-        { k14, k29, k44, k59} \
+        { k00, k15, k30, k45, k60, k75, k90}, \
+        { k01, k16, k31, k46, k61, k76, k91}, \
+        { k02, k17, k32, k47, k62, k77, k92}, \
+        { k03, k18, k33, k48, k63, k78, k93}, \
+        { k04, k19, k34, k49, k64, k79, k94}, \
+        { k05, k20, k35, k50, k65, k80, k95}, \
+        { k06, k21, k36, k51, k66, k81, k96}, \
+        { k07, k22, k37, k52, k67, k82, k97}, \
+        { k08, k23, k38, k53, k68, k83, k98}, \
+        { k09, k24, k39, k54, k69, k84, k99}, \
+        { k10, k25, k40, k55, k70, k85, kA0}, \
+        { k11, k26, k41, k56, k71, k86, kA1}, \
+        { k12, k27, k42, k57, k72, k87, kA2}, \
+        { k13, k28, k43, k58, k73, k88, kA3}, \
+        { k14, k29, k44, k59, k74, k89, kA4} \
 }
 
 #endif /* KEYBOARD_CONFIG_H */
