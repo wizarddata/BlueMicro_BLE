@@ -83,7 +83,7 @@ void setup() {
   setupMatrix();
   startAdv(); 
   keyscantimer.start();
-  //batterytimer.start();
+  batterytimer.start();
   suspendLoop(); // this commands suspends the main loop.  We are no longer using the loop but scheduling things using the timers.
   stringbuffer.clear();
 };
