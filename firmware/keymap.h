@@ -27,7 +27,9 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 #ifndef KEYMAP_H
 #define KEYMAP_H
 
-
+#define _DVORAK 0 // Base Dvorak layer
+#define _NUM 1 // Number Layer
+#define _MEDIA 2  // Media layer
 
 void setupKeymap();
 extern std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix;
