@@ -16,7 +16,6 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 
 */
 #include "keymap.h"
-#include "keycode_macros.c"
 
 std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
     {KEYMAP( \
@@ -29,7 +28,7 @@ std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
         // left thumb
                               KC_LSFT, KC_LALT,
                                        KC_PGUP,
-                     KC_LSFT,   L_NUM, KC_PGDN,
+                     KC_LSFT, L_MEDIA, KC_PGDN,
         // right hand
          KC_F9, KC_F10,  KC_F11,  KC_F12,  KC_INS, KC_CAPS,  KC_SPC,  KC_SPC, KC_SPC,
          KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_VIRR,
@@ -40,58 +39,58 @@ std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
         // right thumb
         KC_VOLD, KC_VOLU,
         KC_END,
-        KC_HOME, L_MEDIA,  KC_SPC
+        KC_HOME,   L_NUM,  KC_SPC 
     )};
 
 void setupKeymap() {
     uint32_t NUM[MATRIX_ROWS][MATRIX_COLS] =
-        KEYMAP(
-        _______, _______, _______, _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, _______,
-        _______,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,
-        _______, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,
-           _______, _______, _______, _______,
+        KEYMAP( \
+        _______, _______, _______, _______, _______, _______, _______, _______, _______, \
+        _______, _______, _______, _______, _______, _______, \
+        _______, _______, _______, _______, _______, _______, \
+        _______,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5, \
+        _______, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC, \
+           _______, _______, _______, _______, \
         // left thumb
-                           _______, _______,
-                                    _______,
-                  _______, _______, _______,
+                           _______, _______, \
+                                    _______, \
+                  _______, _______, _______, \
         // right hand
-        _______, _______, _______, _______, _______, _______, _______, _______, _______,
+        _______, _______, _______, _______, _______, _______, _______, _______, _______, \
+        _______, _______, _______, _______, _______, _______, \
         _______, _______, _______, _______, _______, _______,
-        _______, _______, _______, _______, _______, _______,
-           KC_6,    KC_7,    KC_8,    KC_9,    KC_0,     ,
-        KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN,     ,
-           _______, _______, _______, _______,
+           KC_6,    KC_7,    KC_8,    KC_9,    KC_0, _______, \
+        KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, _______, \
+           _______, _______, _______, _______, \
         // right thumb
-        _______, _______,
-        _______,
-        _______, _______, _______    
+        _______, _______, \
+        _______, \
+        _______, _______, _______      \
         );
     uint32_t MEDIA[MATRIX_ROWS][MATRIX_COLS] =
-        KEYMAP(
+        KEYMAP( \
             // left hand
-       _______, _______, _______, _______, _______, _______, _______, _______, _______,
-       _______, KC_CAW1, KC_CAW2, KC_CAW3, KC_CAW4, KC_CAW5,
-       _______,  KC_CUT, KC_ALLL, KC_ALLD, KC_ALLU, KC_ALLR,
-       _______,  KC_PST, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT,
-       _______, KC_COPY, KC_HOME, KC_PGDN, KC_PGUP, KC_END,
-             KC_PDFL, KC_PDFR, KC_WINL, KC_WINR,
+       _______, _______, _______, _______, _______, _______, _______, _______, _______, \
+       _______, KC_CAW1, KC_CAW2, KC_CAW3, KC_CAW4, KC_CAW5, \
+       _______,  KC_CUT, KC_ALLL, KC_ALLD, KC_ALLU, KC_ALLR, \
+       _______,  KC_PST, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, \
+       _______, KC_COPY, KC_HOME, KC_PGDN, KC_PGUP, KC_END, \
+             KC_PDFL, KC_PDFR, KC_WINL, KC_WINR, \
         // left thumb
-                           _______, _______,
-                                    _______,
-                  _______, _______, _______,
+                           _______, _______, \
+                                    _______, \
+                  _______, _______, _______, \
        // right hand
-       _______, _______, _______, _______, _______, _______, _______, _______, _______,
-       KC_CAW6, KC_CAW7, KC_CAW8, KC_CAW9, _______, _______,
-       _______, _______, _______, _______, _______, _______,
-       _______, _______, _______, _______, _______, _______,
-       _______, _______, _______, _______, _______, _______,
-          _______, _______, _______, _______,
+       _______, _______, _______, _______, _______, _______, _______, _______, _______, \
+       KC_CAW6, KC_CAW7, KC_CAW8, KC_CAW9, _______, _______, \
+       _______, _______, _______, _______, _______, _______, \
+       _______, _______, _______, _______, _______, _______, \
+       _______, _______, _______, _______, _______, _______, \
+          _______, _______, _______, _______, \
        // right thumb
-        _______, _______,
-        _______,
-        _______, _______, _______  
+        _______, _______, \
+        _______, \
+        _______, _______, _______   \
         );
        /*
      * add the other layers
@@ -100,8 +99,8 @@ void setupKeymap() {
     {
         for (int col = 0; col < MATRIX_COLS; ++col)
         {
-            matrix[row][col].addActivation(_NUM, Method::PRESS, L_NUM[row][col]);
-            matrix[row][col].addActivation(_MEDIA, Method::PRESS, L_MEDIA[row][col]);
+            matrix[row][col].addActivation(_NUM, Method::PRESS, NUM[row][col]);
+            matrix[row][col].addActivation(_MEDIA, Method::PRESS, MEDIA[row][col]);
         }
     }     
 };
