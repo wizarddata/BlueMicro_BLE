@@ -58,7 +58,7 @@ void setupConfig() {
 // cppcheck-suppress unusedFunction
 void setup() {
  setupConfig();
- Serial.begin(115200);
+ //Serial.begin(115200);
  // while ( !Serial ) delay(10);   // for nrf52840 with native usb this makes the nrf52840 stall and wait for a serial connection.  Something not wanted for a keyboard...
 
   LOG_LV1("BLEMIC","Starting %s" ,DEVICE_NAME);
