@@ -89,7 +89,7 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 #endif /* KEYBOARD_MODE */
 
 #ifndef DEBOUNCETIME 
-#define DEBOUNCETIME 5
+#define DEBOUNCETIME 2
 #endif
 
 #ifndef HIDREPORTINGINTERVAL
@@ -104,7 +104,7 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 
 #define SLEEPING_DELAY 30000              // when it's not connected, 30 seconds is good.
 #define SLEEPING_DELAY_CONNECTED 600000   // 2 minutes is way too fast and really ennoying. making it 10 minutes
-#define SLEEP_ACTIVE 1                    // 1 = it will go to sleep. 0 = sleep will not be activated.
+#define SLEEP_ACTIVE 0                    // 1 = it will go to sleep. 0 = sleep will not be activated.
 
 #ifndef DEFAULT_PWM_MAX_VALUE 
 #define DEFAULT_PWM_MAX_VALUE 0x7FFF      // PWM max intensity

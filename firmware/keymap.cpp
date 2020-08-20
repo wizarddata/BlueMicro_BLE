@@ -37,7 +37,7 @@ std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
          KC_B,    KC_M,    KC_W,    KC_V,    KC_Z, KC_MINS,
              KC_ENT, KC_LBRC, KC_RBRC, KC_BSLS,
         // right thumb
-        KC_VOLD, KC_VOLU,
+        KC_NO, KC_NO,
         KC_END,
         KC_HOME,   L_NUM,  KC_SPC 
     )};
@@ -102,5 +102,7 @@ void setupKeymap() {
             matrix[row][col].addActivation(_NUM, Method::PRESS, NUM[row][col]);
             matrix[row][col].addActivation(_MEDIA, Method::PRESS, MEDIA[row][col]);
         }
-    }     
+    }  
+    matrix[8][5].addActivation(_DVORAK, Method::MT_TAP, KC_VOLU); 
+    matrix[9][6].addActivation(_DVORAK, Method::MT_TAP, KC_VOLD);
 };
