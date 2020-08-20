@@ -32,8 +32,8 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 #define MATRIX_ROWS 15
 #define MATRIX_COLS 7
 
-#define MATRIX_ROW_PINS {12, 13, 14, 15, 16, 17, 8, 6, 7, 4, 3, 5, 23, 22, 20}
-#define MATRIX_COL_PINS {24, 29, 19, 28, 2, 30, 10} //pin 31 reads battery voltage by default, bodge to 28
+#define MATRIX_ROW_PINS {12, 13, 14, 15, 16, 27, 10, 7, 9, 4, 3, 5, 23, 22, 20}
+#define MATRIX_COL_PINS {24, 29, 26, 30, 2, 28, 11}
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
