@@ -21,7 +21,7 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 #define KEYBOARD_CONFIG_H
 
 #define KEYBOARD_SIDE MASTER
-
+#define BATTERY_TYPE = BATT_LIPO;
 
 #define DEVICE_NAME_M "Blue Wizard" /**< Name of device. Will be included in the advertising data. */
 #define DEVICE_MODEL "Blue Wizard" /**< Name of device. Will be included in the advertising data. */
