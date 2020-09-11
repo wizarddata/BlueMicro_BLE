@@ -30,7 +30,7 @@ std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
                                        KC_PGUP,
                      KC_LSFT, L_MEDIA, KC_PGDN,
         // right hand
-         KC_F9, KC_F10,  KC_F11,  KC_F12,  KC_INS, KC_CAPS,  KC_SPC,  KC_SPC, KC_SPC,
+         KC_F9, KC_F10,  KC_F11,  KC_F12,  KC_INS, KC_CAPS,  KC_SPC,  KC_SPC,  KC_SPC,
          KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_VIRR,
          KC_F,    KC_G,    KC_C,    KC_R,    KC_L,  KC_EQL,
          KC_D,    KC_H,    KC_T,    KC_N,    KC_S, KC_SLSH,
@@ -82,7 +82,7 @@ void setupKeymap() {
                   _______, _______, _______, \
        // right hand
        _______, _______, _______, _______, _______, _______, _______, _______, _______, \
-       KC_CAW6, KC_CAW7, KC_CAW8, KC_CAW9, _______, _______, \
+       _______, _______, _______, _______, _______, _______, \
        _______, _______, _______, _______, _______, _______, \
        _______, _______, _______, _______, _______, _______, \
        _______, _______, _______, _______, _______, _______, \
@@ -92,6 +92,7 @@ void setupKeymap() {
         _______, \
         _______, _______, _______   \
         );
+
        /*
      * add the other layers
      */
