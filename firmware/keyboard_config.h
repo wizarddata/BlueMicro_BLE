@@ -76,14 +76,4 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
         { kE0, kE1, kE2, kE3, kE4,      kE5,      KC_NO      } \
 }
 
-#endif /* KEYBOARD_CONFIG_H */
-
-    // kC0, kD0, kE0, kC1, kD1, kE1, kC2, kD2, kE2, 
-
-        // kC3, kD3, kE3, kC4, kD4, kE4, kC5, kE5, kD5, 
-
-                // { kC0, kC1, kC2, kC3, kC4,      kC5,      KC_NO      }, 
-        // { kD0, kD1, kD2, kD3, kD4,      kD5,      KC_NO      }, 
-        // { kE0, kE1, kE2, kE3, kE4,      kE5,      KC_NO      } 
-//{12, 13, 14, 15, 16, 17, 8, 6, 7, 4, 3, 5} //removed 23, 22, 20
-//#define MATRIX_COL_PINS {24, 29, 19, 31, 2, 30, 10}
+#endif

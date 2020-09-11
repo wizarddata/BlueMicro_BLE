@@ -30,6 +30,7 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 #define _DVORAK 0 // Base Dvorak layer
 #define _NUM 1 // Number Layer
 #define _MEDIA 2  // Media layer
+#define _GAME 3 // Game Layer
 
 #define L_NUM (LAYER_0 + _NUM)
 #define L_MEDIA (LAYER_0 + _MEDIA)

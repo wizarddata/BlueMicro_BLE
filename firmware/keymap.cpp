@@ -30,7 +30,7 @@ std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix =
                                        KC_PGUP,
                      KC_LSFT, L_MEDIA, KC_PGDN,
         // right hand
-         KC_F9, KC_F10,  KC_F11,  KC_F12,  KC_INS, KC_CAPS,  KC_SPC,  KC_SPC,  KC_SPC,
+         KC_F9, KC_F10,  KC_F11,  KC_F12,  KC_INS, KC_CAPS,  KC_SPC,  KC_SPC, TG(L_GAME),
          KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_VIRR,
          KC_F,    KC_G,    KC_C,    KC_R,    KC_L,  KC_EQL,
          KC_D,    KC_H,    KC_T,    KC_N,    KC_S, KC_SLSH,
@@ -92,7 +92,31 @@ void setupKeymap() {
         _______, \
         _______, _______, _______   \
         );
-
+    uint32_t GAME[MATRIX_ROWS][MATRIX_COLS] =
+        KEYMAP( \
+            // left hand
+        KC_ESC,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8, \
+        KC_EQL,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5, \
+          KC_T,  KC_TAB,    KC_Q,    KC_X,    KC_E,    KC_R, \
+          KC_G, KC_LSFT,    KC_A,    KC_W,    KC_D,    KC_F, \
+          KC_B, KC_LCTL,    KC_Z,    KC_S,    KC_C,    KC_V, \
+             KC_LALT, KC_LGUI, KC_LEFT, KC_RGHT, \
+        // left thumb
+                              KC_7,    KC_8, \
+                                       KC_9, \
+                   KC_SPC,    KC_6,    KC_0, \
+       // right hand
+         KC_F9,  KC_F10,  KC_F11,  KC_F12,  KC_INS, KC_CAPS,  KC_SPC,  KC_SPC, TG(L_GAME), \
+          KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_MINS, \
+          KC_Y,    KC_U,    KC_I,    KC_O,    KC_P, KC_BSLS, \
+          KC_H,    KC_J,    KC_K,    KC_L, KC_SCLN, KC_QUOT, \
+          KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT, \
+            KC_UP, KC_DOWN, KC_LBRC, KC_RBRC, \
+       // right thumb
+          KC_NO,   KC_NO, \
+        KC_PGUP, \
+        KC_PGDN,  KC_ENT,  KC_SPC   \
+        );
        /*
      * add the other layers
      */
@@ -102,6 +126,7 @@ void setupKeymap() {
         {
             matrix[row][col].addActivation(_NUM, Method::PRESS, NUM[row][col]);
             matrix[row][col].addActivation(_MEDIA, Method::PRESS, MEDIA[row][col]);
+            matrix[row][col].addActivation(_GAME, Method::PRESS, GAME[row][col]);
         }
     }  
     matrix[8][5].addActivation(_DVORAK, Method::MT_TAP, KC_VOLU); 
