@@ -29,9 +29,6 @@ LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR P
 #define KEYMAP_H
 
 #define _L0  0
-#define _L1  1
-#define _L2  2
-#define _L3  3
 
 void setupKeymap();
 extern std::array<std::array<Key, MATRIX_COLS>, MATRIX_ROWS> matrix;
